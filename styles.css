@@ -13,7 +13,18 @@ header {
     letter-spacing: 2vw;
 }
 
-@media (min-height: 500px) {
+#more {
+    display: none;
+}
+ul {
+    list-style: square;
+}
+a {
+    color: black;
+    font-size: 8vh;
+}
+
+@media (min-height: 500px) and (min-width:500px) {
     body {
         text-align:center;
     }
@@ -50,8 +61,8 @@ header {
     footer {
         position: fixed;
         text-align: right;
-        bottom:10px;
-        right:10px;
+        bottom:12px;
+        right:12px;
     }
     footer li {
         list-style:none;
@@ -63,33 +74,13 @@ header {
         font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
     }
     #more {
-        font-size:30px;
+        font-size:32px;
         display: none;
-    }
-}
-
-@media (max-height: 499px) {
-    #more {
-        display: none;
-    }
-    ul {
-        list-style: none;
-    }
-    a {
-        color: black;
-        font-size: 8vh;
     }
 }
 
 @media (max-height: 200px) {
     a {
         font-size: 14px;
-    }
-}
-
-@media (max-width:500px) {
-    main ul li {
-        display: block;
-        padding: 0px !important;
     }
 }

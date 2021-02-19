@@ -10,15 +10,15 @@ class Menu {
     handleSize = function () {
         let more = $('#more');
         let menu = $('#menu');
-        if ($(window).height() > 500) {
-            more.click(function () {
-                $('#menu').toggle();
-                if (more[0].innerHTML === '+') {
-                    more[0].innerHTML = 'x'
-                } else {
-                    $('#more')[0].innerHTML = '+'
-                }
-            });
+        more.click(function () {
+            $('#menu').toggle();
+            if (more[0].innerHTML === '+') {
+                more[0].innerHTML = 'x'
+            } else {
+                $('#more')[0].innerHTML = '+'
+            }
+        });
+        if ($(window).height() > 500 && $(window).width() > 500) {
             menu.hide();
             more.show();
         } else {
