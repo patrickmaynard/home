@@ -77,6 +77,13 @@ header {
     }
     a {
         color: black;
+        font-size: 8vh;
+    }
+}
+
+@media (max-height: 200px) {
+    a {
+        font-size: 14px;
     }
 }
 
