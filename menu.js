@@ -15,12 +15,13 @@ class Menu {
             if (more[0].innerHTML === '+') {
                 more[0].innerHTML = 'x'
             } else {
-                $('#more')[0].innerHTML = '+'
+                $('#more')[0].innerHTML = '+';
             }
         });
         if ($(window).height() > 500 && $(window).width() > 500) {
             menu.hide();
             more.show();
+            $('#more')[0].innerHTML = '+'
         } else {
             menu.show();
             more.hide();
