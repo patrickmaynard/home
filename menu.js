@@ -10,21 +10,33 @@ class Menu {
     handleSize = function () {
         let more = $('#more');
         let menu = $('#menu');
+        let that = this;
         more.click(function () {
-            $('#menu').toggle();
-            if (more[0].innerHTML === '+') {
-                more[0].innerHTML = 'x'
-            } else {
-                $('#more')[0].innerHTML = '+';
-            }
+            that.handleClick();
         });
-        if ($(window).height() > 500 && $(window).width() > 500) {
+        if (window.innerHeight > 499 && window.innerWidth > 499) {
             menu.hide();
             more.show();
-            $('#more')[0].innerHTML = '+'
+            $('#more')[0].innerHTML = '+';
         } else {
             menu.show();
             more.hide();
+        }
+    }
+
+    handleClick = function () {
+        let more = $('#more');
+        let that = this;
+        $('#menu').toggle();
+        if (more[0].innerHTML === '+') {
+            more[0].innerHTML = 'x'
+        } else {
+            $('#more')[0].innerHTML = '+';
+            //Fixes a bug where we lose our handler occasionally on resize
+            more.unbind();
+            more.click(function () {
+                that.handleClick();
+            });
         }
     }
 }

@@ -1,20 +1,7 @@
-header {
-    position: fixed;
-    z-index: -1000;
-    top:-20px;
-    left:-20px;
-    text-align: left;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-    font-size:75vh;
-    line-height: 52vh;
-    color:#f6f6f6;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2vw;
-}
-
 #more {
     display: none;
+    margin-left:20px;
+    text-decoration:none;
 }
 ul {
     list-style: square;
@@ -24,7 +11,29 @@ a {
     font-size: 8vh;
 }
 
+h1 {
+    font-size: 14vh;
+    color:#cccccc;
+    margin-left:20px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
 @media (min-height: 500px) and (min-width:500px) {
+    h1 {
+        position: fixed;
+        z-index: -1000;
+        top:-20px;
+        left:-20px;
+        text-align: left;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+        font-size:75vh;
+        line-height: 52vh;
+        color:#f6f6f6;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2vw;
+        margin-top:0px;
+    }
     body {
         text-align:center;
     }
@@ -80,6 +89,7 @@ a {
 }
 
 @media (max-height: 200px) {
+    h1 {font-size: 18px;}
     a {
         font-size: 14px;
     }
