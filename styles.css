@@ -42,6 +42,9 @@ h1 {
     body {
         text-align:center;
     }
+    li {
+        margin-bottom: auto;
+    }
     main {
         margin:35vh auto;
         font-size:8vh;
@@ -52,7 +55,6 @@ h1 {
     main ul li {
         display: inline-block;
         line-height: 10vh;
-        margin-bottom: auto;
     }
     main ul li:first-child {
         border-right: 1px solid black;
