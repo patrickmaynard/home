@@ -14,7 +14,7 @@ class Menu {
         more.click(function () {
             that.handleClick();
         });
-        if (window.innerHeight > 499 && window.innerWidth > 499) {
+        if (window.innerHeight > 499 && window.innerWidth > 499 && window.innerHeight < window.innerWidth * 1.2) {
             menu.hide();
             more.show();
             $('#more')[0].innerHTML = '+';
