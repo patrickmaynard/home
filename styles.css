@@ -4,7 +4,7 @@
     text-decoration:none;
 }
 ul {
-    list-style: square;
+    list-style: disc;
 }
 a {
     color: black;
@@ -12,7 +12,7 @@ a {
 }
 
 li {
-    margin-bottom: 3vw;
+    margin-bottom: 5vh;
 }
 
 h1 {
