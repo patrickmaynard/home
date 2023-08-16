@@ -29,7 +29,7 @@ class Menu {
         let that = this;
         $('#menu').toggle();
         if (more[0].innerHTML === '+') {
-            more[0].innerHTML = 'x'
+            more[0].innerHTML = '&times;'
         } else {
             $('#more')[0].innerHTML = '+';
             //Fixes a bug where we lose our handler occasionally on resize
