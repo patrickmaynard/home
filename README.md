@@ -1,2 +1,2 @@
 # home
-My new, very minimal homepage
+My very minimal homepage
