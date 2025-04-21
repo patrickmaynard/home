@@ -4,7 +4,7 @@
     text-decoration:none;
 }
 ul {
-    list-style: disc;
+    list-style: none;
 }
 a {
     color: black;
@@ -55,6 +55,7 @@ h1 {
     main ul li {
         display: inline-block;
         line-height: 10vh;
+				list-style: none;
     }
     main ul li:first-child {
         border-right: 1px solid black;
