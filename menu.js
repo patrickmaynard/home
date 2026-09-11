@@ -12,7 +12,13 @@ class Menu {
         let menu = $('#menu');
         let that = this;
         more.click(function () {
-            that.handleClick();
+            that.handleMoreClick();
+        });
+        let aboutLink = $('#about-link');
+        let aboutDiv = $('#about');
+        let that = this;
+        aboutLink.click(function () {
+            that.handleAboutClick();
         });
         if (window.innerHeight > 499 && window.innerWidth > 499 && window.innerHeight < window.innerWidth * 1.2) {
             menu.hide();
@@ -24,7 +30,7 @@ class Menu {
         }
     }
 
-    handleClick = function () {
+    handleMoreClick = function () {
         let more = $('#more');
         let that = this;
         $('#menu').toggle();
@@ -35,7 +41,7 @@ class Menu {
             //Fixes a bug where we lose our handler occasionally on resize
             more.unbind();
             more.click(function () {
-                that.handleClick();
+                that.handleMoreClick();
             });
         }
     }
