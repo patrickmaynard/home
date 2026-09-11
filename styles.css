@@ -111,7 +111,7 @@ div.about {
         display: none;
     }
     #about-link {
-        display: auto;
+        display: inline;
     }
 	div.about {
 		display: none;
