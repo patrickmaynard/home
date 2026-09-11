@@ -27,6 +27,7 @@ h1 {
 div.about {
 	display: none;
 	font-size:8vh;
+	padding: 40px;
 }
 
 @media (min-height: 500px) and (min-width:500px) and (max-height: 120vw) {
