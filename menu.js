@@ -51,10 +51,10 @@ class Menu {
         let aboutLink = $('#about-link');
         let that = this;
         $('#about').toggle();
-        if (aboutLink[0].innerHTML === 'about +') {
-            aboutLink[0].innerHTML = 'about &times;'
+        if (aboutLink[0].innerHTML === 'About +') {
+            aboutLink[0].innerHTML = 'About &times;'
         } else {
-            $('#about-link')[0].innerHTML = 'about +';
+            $('#about-link')[0].innerHTML = 'About +';
             //Fixes a bug where we lose our handler occasionally on resize
             aboutLink.unbind();
             aboutLink.click(function () {
