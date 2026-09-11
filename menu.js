@@ -16,7 +16,6 @@ class Menu {
         });
         let aboutLink = $('#about-link');
         let aboutDiv = $('#about');
-        let that = this;
         aboutLink.click(function () {
             that.handleAboutClick();
         });
