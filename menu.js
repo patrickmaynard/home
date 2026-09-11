@@ -45,6 +45,24 @@ class Menu {
             });
         }
     }
+
+    
+
+    handleAboutClick = function () {
+        let aboutLink = $('#about-link');
+        let that = this;
+        $('#about').toggle();
+        if (aboutLink[0].innerHTML === 'about +') {
+            aboutLink[0].innerHTML = 'about &times;'
+        } else {
+            $('#about-link')[0].innerHTML = 'about +';
+            //Fixes a bug where we lose our handler occasionally on resize
+            aboutLink.unbind();
+            aboutLink.click(function () {
+                that.handleAboutClick();
+            });
+        }
+    }
 }
 
 $(function(){
