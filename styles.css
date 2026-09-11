@@ -27,9 +27,6 @@ div.about {
 	padding: 40px;
 	text-align: left;
 }
-#about-link {
-    display: none;
-}
 em.publication {
 	white-space: nowrap;
 } 
@@ -110,9 +107,6 @@ em.publication {
     #more {
         font-size:4vw;
         display: none;
-    }
-    #about-link {
-        display: inline;
     }
 	div.about {
 		display: none;
