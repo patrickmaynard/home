@@ -107,6 +107,9 @@ div.about {
         font-size:4vw;
         display: none;
     }
+    #about-link {
+        display: none;
+    }
 	div.about {
 		display: none;
 		font-size:8vh;
