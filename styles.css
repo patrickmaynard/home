@@ -23,7 +23,7 @@ h1 {
 }
 
 div.about {
-	font-size:8vh;
+	font-size:6vh;
 	padding: 40px;
 	text-align: left;
 }
@@ -116,7 +116,6 @@ em.publication {
     }
 	div.about {
 		display: none;
-		font-size:6vh;
 		padding: 40px;
 		text-align: left;
 		width:80%;
